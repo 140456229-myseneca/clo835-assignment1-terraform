@@ -47,6 +47,7 @@ resource "aws_instance" "ec2_instances_webservers" {
   key_name                    = aws_key_pair.web_key.key_name
   subnet_id                   = data.aws_subnets.subnets_public.ids[0]
   security_groups             = [aws_security_group.web_sg.id]
+  iam_instance_profile        = "LabInstanceProfile"
   associate_public_ip_address = true
   user_data                   = file("user_data.sh")
 

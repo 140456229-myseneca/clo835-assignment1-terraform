@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "ecr-app" {
-  name                 = "assignment-1-app"
+  name                 = "clo835_assignment1"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -8,7 +8,7 @@ resource "aws_ecr_repository" "ecr-app" {
 }
 
 resource "aws_ecr_repository" "ecr-db" {
-  name                 = "assignment-1-db"
+  name                 = "clo835-assignment1-db"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {

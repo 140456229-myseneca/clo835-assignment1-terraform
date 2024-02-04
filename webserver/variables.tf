@@ -1,8 +1,8 @@
 # Default tags
 variable "default_tags" {
   default = {
-    "Owner" = "Rishi",
-    "App"   = "Assignment",
+    "Owner" = "mamad",
+    "App"   = "Assignment1",
     "Course" = "CLO835"
   }
   type        = map(any)
@@ -10,7 +10,7 @@ variable "default_tags" {
 }
 
 variable "prefix" {
-  default     = "Assignment"
+  default     = "clo835-assignment"
   type        = string
   description = "Name prefix"
 }
